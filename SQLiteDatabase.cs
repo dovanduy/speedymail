@@ -20,9 +20,9 @@ namespace SpeedyMail
             string directory = "Data Source=" + Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\SpeedyMail\speedymail.sqlite";
 
             //MessageBox.Show(directory);
-            //dbConnection = "Data Source=" +  AppDomain.CurrentDomain.BaseDirectory + "speedymail.sqlite";
-            dbConnection = "Data Source=" + Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\SpeedyMail\speedymail.sqlite";
-
+            dbConnection = "Data Source=" +  AppDomain.CurrentDomain.BaseDirectory + "speedymail.sqlite";
+            //dbConnection = "Data Source=" + Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\SpeedyMail\speedymail.sqlite";
+            dbConnection = dbConnection + "";
         }
 
         /// <summary>
