@@ -77,6 +77,7 @@ namespace SpeedyMail
             bw1.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(backgroundWorker1_ProgressChanged);
             bw1.RunWorkerCompleted += new RunWorkerCompletedEventHandler(backgroundWorker1_RunWorkerCompleted);
         }        
+
         string returnImage(string pt)
         {
             string tempString = txtStatus.Text + @"\" + txtAddressList.Text;
@@ -368,6 +369,7 @@ namespace SpeedyMail
             btnApplicationSettings.Enabled = BT;
             //txtLog.Enabled = BT;
         }
+
         void addLog(string message)
         {
             txtLog.Text += "[" + DateTime.Now.ToString() + "] ...// " + message + "\r\n";
